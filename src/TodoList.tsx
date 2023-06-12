@@ -54,6 +54,7 @@ const TodoList = () => {
     const deleteTodo = (id: string) => {
         setTodos((prev) => prev.filter((todo) => todo.id !== id));
         setValue((prev) => prev.filter((todo) => todo.id !== id));
+        setCurrentTodo(null);
     };
     return (
         <div className="w-[350px] bg-white rounded-lg p-3 mx-auto my-10">
